@@ -11,6 +11,6 @@ Run the following command:
 
 When submiting, the tool records all labeled words from the first to the current row. Dupicated submissions do not change the output logs.
 
-To resume previous work, run following command:
+To resume previous work, run the following command:
 
 `python3 label_imags.py --curr-row [current working row]`
