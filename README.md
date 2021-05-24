@@ -9,7 +9,7 @@ Run the following command:
 
 `python3 label_imags.py`
 
-When submiting, the tool records all labeled words located in a table part that above the current working row.
+When submiting, the tool records all labeled words from the first to the current row. Dupicated submissions do not change the output logs.
 
 To resume previous work, run following command:
 
