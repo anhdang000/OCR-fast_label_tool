@@ -90,9 +90,17 @@ class App(QWidget):
 		curr_col = 0
 		curr_row = 0
 		i = 0
-		while i < N_ROWS*N_COLS:
+		while i < min(len(IMG_PATHS), N_ROWS*N_COLS):
 			self.tableWidget.setImage(curr_row, curr_col, IMG_PATHS[i])
-			self.tableWidget.setItem(curr_row, curr_col + 1, QTableWidgetItem(CONTENT[i][1]))
+			# print(IMG_PATHS[i])
+			list_rec_res = [elem for elem in CONTENT if elem and elem[0] == IMG_PATHS[i]]
+			# print(list_rec_res)
+			rec_res = list_rec_res[0] if len(list_rec_res) > 0 else None
+			# print(rec_res)
+			if rec_res and len(rec_res) > 1:
+				# print(i, CONTENT[i][1])
+				self.tableWidget.setItem(curr_row, curr_col + 1, QTableWidgetItem(rec_res[1]))
+			# self.tableWidget.setItem(curr_row, curr_col + 1, QTableWidgetItem(CONTENT[i][1]))
 			if curr_col == N_COLS*2 - 2:
 				curr_row += 1
 				curr_col = 0
