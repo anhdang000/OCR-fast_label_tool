@@ -28,7 +28,7 @@
 	<p>Step 2: (Optional) The pre-recognized result file named <code>rec_gt.txt</code> must be put at the same folder with script files</p>
 	</li>
 	<li>
-	<p>Step 3: To execute the GUI:</p></li>
+	<p>Step 3: To execute the GUI:</p></li></li>
 
 ```
     usage: label_imgs.py [-h] [--prev-row PREV_ROW] [--num-examples NUM_EXAMPLES]
