@@ -30,8 +30,7 @@
 	<li>
 	<p>Step 3: To execute the GUI:</p>
 
-	<pre>
-<code>
+```
     usage: label_imgs.py [-h] [--prev-row PREV_ROW] [--num-examples NUM_EXAMPLES]
                      [--num-cols NUM_COLS]
 
@@ -41,7 +40,7 @@
       --num-examples NUM_EXAMPLES
                             Number of examples will be loaded into the table.
       --num-cols NUM_COLS   Number of main columns.
-    </code></pre>
+```
 
 	<p>&nbsp;</p>
 	</li>
@@ -51,11 +50,10 @@
 	<li>
 	<p>Step 5: (Optional) [<strong>Need backup]&nbsp;</strong>To clear output files&nbsp;to get ready for a next labeling session:</p>
 
-	<pre>
-<code>
+```
     chmod +x clear_outputfile.sh
     bash clear_outputfile.sh
-    </code></pre>
+```
 
 	<p>&nbsp;</p>
 	</li>
