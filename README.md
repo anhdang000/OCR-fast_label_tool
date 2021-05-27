@@ -10,6 +10,7 @@ Author: Dang Linh Anh
 - OS: Ubuntu >= 18 (Recommended)
 - PyQt5
 - Python 3
+
 <b>Note</b>: When working with Vietnamese, this tool may not work properly in Windows because of some GUI-based conflicts in encoding and decoding texts. 
 
 ## Deploy instructions: 
