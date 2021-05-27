@@ -11,13 +11,15 @@ from PyQt5.QtWidgets import *
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--curr-row', default=0, type=int)
+parser.add_argument('--prev-row', default=0, type=int, help='Previous working row. For resuming.')
+parser.add_argument('--num-examples', default=1000, type=int, help='Number of examples will be loaded into the table.')
+parser.add_argument('--num-cols', default=5, type=int, help='Number of main columns.')
 FLAGS = parser.parse_args()
+print(FLAGS.accumulate(FLAGS.integers))
 
-CURR_ROW = FLAGS.curr_row
-
-N_COLS = 5
-NUM_EXAMPLES = 13404
+CURR_ROW = FLAGS.prev_row
+N_COLS = FLAGS.num_cols
+NUM_EXAMPLES = FLAGS.num_examples
 N_ROWS = NUM_EXAMPLES // N_COLS
 
 class ImageWidget(QtWidgets.QWidget):
