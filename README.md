@@ -47,12 +47,13 @@
 	</li>
 	<li>
 	<p>Step 5: (Optional) [<strong>Need backup]&nbsp;</strong>To clear output files&nbsp;to get ready for a next labeling session:</p>
+	</li>
 
 ```
     chmod +x clear_outputfile.sh
     bash clear_outputfile.sh
 ```
-	</li>
+	
 </ul>
 
 <p><strong>Usage</strong>:</p>
