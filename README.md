@@ -41,9 +41,6 @@
                             Number of examples will be loaded into the table.
       --num-cols NUM_COLS   Number of main columns.
 ```
-
-	<p>&nbsp;</p>
-	</li>
 	<li>
 	<p>Step 4: Start labeling! Using&nbsp;<b>Enter key </b>is recommended&nbsp;to traverse quickly to the next text column</p>
 	</li>
