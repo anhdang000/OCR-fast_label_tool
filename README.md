@@ -52,8 +52,6 @@
     chmod +x clear_outputfile.sh
     bash clear_outputfile.sh
 ```
-
-	<p>&nbsp;</p>
 	</li>
 </ul>
 
