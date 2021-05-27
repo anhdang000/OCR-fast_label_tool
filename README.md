@@ -2,8 +2,6 @@
 
 Author: Dang Linh Anh
 
-## Code repository: https://gitlab.com/eyeq.tech/ocr-fast-label-tool
-
 ## Branches:
 
 - Master
