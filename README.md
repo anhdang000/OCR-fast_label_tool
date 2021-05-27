@@ -28,7 +28,7 @@
 	<p>Step 2: (Optional) The pre-recognized result file named <code>rec_gt.txt</code> must be put at the same folder with script files</p>
 	</li>
 	<li>
-	<p>Step 3: To execute the GUI:</p>
+	<p>Step 3: To execute the GUI:</p></li>
 
 ```
     usage: label_imgs.py [-h] [--prev-row PREV_ROW] [--num-examples NUM_EXAMPLES]
@@ -41,6 +41,7 @@
                             Number of examples will be loaded into the table.
       --num-cols NUM_COLS   Number of main columns.
 ```
+	
 	<li>
 	<p>Step 4: Start labeling! Using&nbsp;<b>Enter key </b>is recommended&nbsp;to traverse quickly to the next text column</p>
 	</li>
