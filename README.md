@@ -44,7 +44,7 @@ Author: Dang Linh Anh
 ```    
  
 
-## Usage:
+## Interfaces:
 
 The tool is organized into 5 main columns. Each column contains 2 entries named Input and Label.
 Buttons: 
