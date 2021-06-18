@@ -11,7 +11,7 @@ IMG_PATHS = [join(IMG_DIR, img_id) for img_id in IMG_IDS]
 
 print(f'Found {len(IMG_PATHS)} cropped images!\n')
 
-with open(RECOG_TEXTFILE, 'r') as f:
+with open(RECOG_TEXTFILE, 'r', encoding="utf8") as f:
     CONTENT = [line.strip().split('\t') for line in f.readlines()]
     CONTENT = sorted(CONTENT, key=lambda entry: entry[0])
 

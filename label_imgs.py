@@ -132,10 +132,10 @@ class App(QWidget):
 	# action method
 	def save_results(self):
 		curr_row = self.tableWidget.currentRow()
-		with open('output.txt', 'r') as f:
+		with open('output.txt', 'r', encoding="utf8") as f:
 			previous_content = [line.strip().split('\t')[0] for line in f.readlines()]
 
-		with open('output.txt', 'a') as f:
+		with open('output.txt', 'a', encoding="utf8") as f:
 			self.textbox.setText('Writing to output.txt')
 			print('Writing to output.txt')
 			count = 0
@@ -156,10 +156,10 @@ class App(QWidget):
 							# Write to `output_diff.txt` if difference(s) were found
 							if table_cell.text() != CONTENT[idx][1]:
 								print(table_cell.text() + '\t' + CONTENT[idx][1])
-								with open('output_diff.txt', 'r') as f1:
+								with open('output_diff.txt', 'r', encoding="utf8") as f1:
 									previous_content_diff = [line.strip().split('\t')[0] for line in f1.readlines()]
 
-								with open('output_diff.txt', 'a') as f1:
+								with open('output_diff.txt', 'a', encoding="utf8") as f1:
 									if IMG_PATHS[idx] not in previous_content_diff:
 										f1.write(IMG_PATHS[idx] + '\t' + table_cell.text() + '\n')
 			
