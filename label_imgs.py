@@ -67,7 +67,7 @@ class App(QWidget):
 
 		# Set current working row
 		self.tableWidget.setCurrentCell(CURR_ROW, 1, QtCore.QItemSelectionModel.Select)
-
+		self.tableWidget.item(CURR_ROW, 1).setBackground(QtGui.QColor(100,100,150))
 		# Initial notification
 		self.textbox.setText(f'Loaded {NUM_EXAMPLES} images')
 		
@@ -102,7 +102,7 @@ class App(QWidget):
 			if rec_res and len(rec_res) > 1:
 				# print(i, CONTENT[i][1])
 				self.tableWidget.setItem(curr_row, curr_col + 1, QTableWidgetItem(rec_res[1]))
-			# self.tableWidget.setItem(curr_row, curr_col + 1, QTableWidgetItem(CONTENT[i][1]))
+			self.tableWidget.setItem(curr_row, curr_col + 1, QTableWidgetItem(CONTENT[i][1]))
 			if curr_col == N_COLS*2 - 2:
 				curr_row += 1
 				curr_col = 0
@@ -156,6 +156,7 @@ class App(QWidget):
 							# Write to `output_diff.txt` if difference(s) were found
 							if table_cell.text() != CONTENT[idx][1]:
 								print(table_cell.text() + '\t' + CONTENT[idx][1])
+								print(table_cell.text().decode('utf-8'))
 								with open('output_diff.txt', 'r', encoding="utf8") as f1:
 									previous_content_diff = [line.strip().split('\t')[0] for line in f1.readlines()]
 
