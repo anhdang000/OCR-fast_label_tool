@@ -156,7 +156,6 @@ class App(QWidget):
 							# Write to `output_diff.txt` if difference(s) were found
 							if table_cell.text() != CONTENT[idx][1]:
 								print(table_cell.text() + '\t' + CONTENT[idx][1])
-								print(table_cell.text().decode('utf-8'))
 								with open('output_diff.txt', 'r', encoding="utf8") as f1:
 									previous_content_diff = [line.strip().split('\t')[0] for line in f1.readlines()]
 
